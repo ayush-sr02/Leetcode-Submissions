@@ -16,15 +16,11 @@ public:
         return true;
     }
     
-    bool solve(string s,string t){
-        return isIsomorphic(s,t);
-    }
-    
     vector<string> findAndReplacePattern(vector<string>& words, string pattern) {
         vector<string> ans;
         
         for(auto i:words){
-            if(solve(i,pattern)) ans.push_back(i);
+            if(isIsomorphic(i,pattern)) ans.push_back(i);
         }
         
         return ans;
