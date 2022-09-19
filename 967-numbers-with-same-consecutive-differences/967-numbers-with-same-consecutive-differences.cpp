@@ -15,7 +15,6 @@ public:
         }
     }
     
-    
     vector<int> numsSameConsecDiff(int n, int k) {
         int x=n-1;
         for(int i=1;i<=9;i++){
