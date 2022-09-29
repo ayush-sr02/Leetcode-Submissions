@@ -15,8 +15,9 @@ public:
     int minFallingPathSum(vector<vector<int>>& matrix) {
         int n=matrix.size();
         int ans=1e9;
+        vector<vector<int>> dp(n,vector<int> (n,-1));
+
         for(int j=0;j<n;j++){
-            vector<vector<int>> dp(n,vector<int> (n,-1));
             int x=solve(matrix,n-1,j,dp);
             ans=min(x,ans);
         }
