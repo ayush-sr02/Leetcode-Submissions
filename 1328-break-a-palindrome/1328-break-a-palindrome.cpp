@@ -8,7 +8,7 @@ public:
         for(i=0;i<palin.size();i++){
             if(palin[i]!='a' && i!=palin.size()/2) {
                 palin[i] = 'a';
-                break;
+                return palin;
             }
         }
         if(i==palin.size()) palin[i-1]='b';
