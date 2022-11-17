@@ -23,8 +23,8 @@ public:
         vector<vector<int>> dp(n+1,vector<int> (m+1,-1));
         for(int i=0;i<=n;i++){
             for(int j=0;j<=m;j++){
-                if(i==0) dp[i][j] = j+1;
-                else if(j==0) dp[i][j] = i+1;
+                if(i==0) dp[i][j] = j;
+                else if(j==0) dp[i][j] = i;
                 else if(word1[i-1]==word2[j-1]) dp[i][j] = dp[i-1][j-1];
                 else{
                     int insert = 1+dp[i][j-1]; 
@@ -35,6 +35,6 @@ public:
             }
         }
         
-        return dp[n][m]-1;
+        return dp[n][m];
     }
 };
