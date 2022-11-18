@@ -19,8 +19,6 @@ public:
             else sum++;
             right[i]=sum;
         }
-        int sumLeft = accumulate(left.begin(),left.end(),0);
-        int sumRight = accumulate(right.begin(),right.end(),0);
         for(int i=1;i<n-1;i++){
             if(left[i]!=1 and right[i]!=1) ans=max(ans,left[i]+right[i+1]);
         }
