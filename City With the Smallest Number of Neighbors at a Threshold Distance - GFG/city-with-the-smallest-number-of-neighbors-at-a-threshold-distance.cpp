@@ -25,20 +25,14 @@ class Solution {
                 }
             }
         }
-        vector<int> v(n,0);
+        int ans=0,mn=1e9;
         for(int i=0;i<n;i++){
             int cnt=0;
             for(int j=0;j<n;j++){
                 if(i!=j and dis[i][j]<=d) cnt++;
             }
-            v[i]=cnt;
-        }
-        int ans=0;
-        int mn=1e9;
-        for(int i=0;i<n;i++){
-            if(v[i]<=mn){
-                ans=i;
-                mn=v[i];
+            if(cnt<=mn){
+                mn=cnt;ans=i;
             }
         }
         return ans;
