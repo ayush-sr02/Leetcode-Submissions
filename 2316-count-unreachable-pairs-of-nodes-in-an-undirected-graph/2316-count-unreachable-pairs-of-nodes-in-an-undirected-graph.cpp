@@ -35,9 +35,18 @@ public:
             if(xx==yy) continue;
             else merge(x,y);
         }
+        for(auto i:edges){
+            int x=i[0];
+            int y=i[1];
+            int xx=find(x);
+            int yy=find(y);
+            if(xx==yy) continue;
+            else merge(x,y);
+        }
+        
         unordered_map<ll,ll> mp;
         for(int i=0;i<parent.size();i++){
-            mp[find(i)]++;
+            mp[parent[i]]++;
         }
         for(auto i:mp){
             ans+=(1LL)*((n-i.second)*i.second);
