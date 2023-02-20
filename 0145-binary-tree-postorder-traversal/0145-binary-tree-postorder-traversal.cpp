@@ -20,14 +20,16 @@ public:
         while(!s1.empty()){
             node=s1.top();
             s1.pop();
-            s2.push(node);
+            // s2.push(node);
+            ans.push_back(node->val);
             if(node->left!=NULL) s1.push(node->left);
             if(node->right!=NULL) s1.push(node->right);
         }
-        while(!s2.empty()){
-            ans.push_back(s2.top()->val);
-            s2.pop();
-        }
+        // while(!s2.empty()){
+        //     ans.push_back(s2.top()->val);
+        //     s2.pop();
+        // }
+        reverse(begin(ans),end(ans));
         return ans;
     }
 };
