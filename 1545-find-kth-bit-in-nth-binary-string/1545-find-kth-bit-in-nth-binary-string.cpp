@@ -11,13 +11,13 @@ public:
     }
     
     char findKthBit(int n, int k) {
-        vector<string> v(n+1);
-        v[0]="0";
+        string prev;
+        string cur="0";
         for(int i=1;i<=n;i++){
-            string s = v[i-1]+"1"+fn(v[i-1]);
-            v[i]=s;
+            prev=cur;
+            string s = prev+"1"+fn(prev);
+            cur=s;
         }
-        string ans=v[n];
-        return ans[k-1];
+        return prev[k-1];
     }
 };
