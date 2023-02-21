@@ -15,8 +15,7 @@ public:
         string cur="0";
         for(int i=1;i<=n;i++){
             prev=cur;
-            string s = prev+"1"+fn(prev);
-            cur=s;
+            cur = prev+"1"+fn(prev);
         }
         return prev[k-1];
     }
