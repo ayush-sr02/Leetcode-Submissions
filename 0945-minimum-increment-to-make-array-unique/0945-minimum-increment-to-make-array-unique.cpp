@@ -2,16 +2,11 @@ class Solution {
 public:
     int minIncrementForUnique(vector<int>& nums) {
         int ans=0;
-        set<int> s;
         sort(begin(nums),end(nums));
-        for(int i=0;i<nums.size();i++){
-            if(s.count(nums[i])==0){
-                s.insert(nums[i]);
-            }else{
-                int temp = nums[i];
+        for(int i=1;i<nums.size();i++){
+            if(nums[i-1]>=nums[i]){
+                ans+=(nums[i-1]-nums[i]+1);
                 nums[i]=nums[i-1]+1;
-                ans+=(nums[i]-temp);
-                s.insert(nums[i]);
             }
         }
         return ans;
