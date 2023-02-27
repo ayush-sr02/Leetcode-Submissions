@@ -1,28 +1,27 @@
 class Solution {
 public:
-    bool canFinish(int num, vector<vector<int>>& p) {
-        vector<int> indegree(num,0);
-        vector<int> adj[num];
-
-        for(auto i:p){
-            adj[i[0]].push_back(i[1]);
-            indegree[i[1]]++;
+    bool canFinish(int n, vector<vector<int>>& pre) {
+        vector<int> indegree(n,0);
+        vector<int> adj[n];
+        
+        for(auto i:pre){
+            adj[i[1]].push_back(i[0]);
+            indegree[i[0]]++;
         }
         queue<int> q;
-        vector<int> topo;
-        
-        for(int i=0;i<num;i++){
+        for(int i=0;i<indegree.size();i++){
             if(indegree[i]==0) q.push(i);
         }
-        
+        int cnt=0;
         while(!q.empty()){
-            int top = q.front(); q.pop();
-            topo.push_back(top);
-            for(auto it:adj[top]){
-                indegree[it]--;
-                if(indegree[it]==0) q.push(it);
+            int node=q.front();
+            q.pop();
+            cnt++;
+            for(auto i:adj[node]){
+                indegree[i]--;
+                if(indegree[i]==0) q.push(i);
             }
         }
-        return topo.size()==num;
+        return cnt==n;
     }
 };
