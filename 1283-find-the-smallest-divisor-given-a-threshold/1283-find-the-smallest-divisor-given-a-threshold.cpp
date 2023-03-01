@@ -23,7 +23,6 @@ public:
                 low=mid+1;
             }
         }
-        cout<<endl;
         return ans;
     }
 };
