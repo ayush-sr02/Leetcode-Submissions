@@ -7,30 +7,53 @@ class Solution
 {
 	public:
 	#define pi pair<int,int> 
-	//Function to find sum of weights of edges of the Minimum Spanning Tree.
+    vector<int> parent,size;
+    
+    int find(int u){
+        if(parent[u]==u) return u;
+        return parent[u] = find(parent[u]);
+    }
+    
+    void merge(int u,int v){
+        u=find(u);
+        v=find(v);
+        if(u==v) return ;
+        if(size[u]>v){
+            parent[v]=u;
+            size[u]+=size[v];
+        }else{
+            parent[u]=v;
+            size[v]+=size[u];
+        }
+    }
+    
     int spanningTree(int V, vector<vector<int>> adj[])
     {
         // code here
-        priority_queue<pi,vector<pi>,greater<pi>> pq;
         int sum=0;
-        pq.push({0,0});
-        vector<int> vis(V,0);
-        
-        while(!pq.empty()){
-            int node = pq.top().second;
-            int wt = pq.top().first;
-            pq.pop();
-            if(vis[node]) continue;
-            vis[node]=1;
-            sum+=wt;
-            for(auto it:adj[node]){
-                int adjNode = it[0];
-                int adjWt = it[1];
-                if(!vis[adjNode]){
-                    pq.push({adjWt,adjNode});
-                }
+        parent.resize(V);
+        iota(parent.begin(),parent.end(),0);
+        size.resize(V,1);
+        vector<pair<int,pair<int,int>>> edges;
+        for(int i=0;i<V;i++){
+            for(auto it:adj[i]){
+                edges.push_back({it[1],{i,it[0]}});
             }
         }
+        sort(begin(edges),end(edges));
+        for(auto i:edges){
+            int wt=i.first;
+            int node = i.second.first;
+            int adjNode = i.second.second;
+            int x = find(node);
+            int y = find(adjNode);
+            if(x==y) continue;
+            else{
+                sum+=wt;
+                merge(node,adjNode);
+            }
+        }
+        
         return sum;
     }
 };
