@@ -1,21 +1,22 @@
 class Solution {
 public:
     vector<vector<int>> dp;
-    
-    bool solve(int i,int j,string &s,string &p){
+    bool solve(int i,int j,string &s,string &t){
         if(i<0 and j<0) return true;
-        if(i<0 and j>=0){
-            for(int x=0;x<=j;x++) if(p[x]!='*') return false;
+        if(i<0){
+            for(int k=j;k>=0;k--) if(t[k]!='*') return false;
             return true;
         }
-        if(j<0 and i>=0) return false;
+        if(j<0) return false;
         if(dp[i][j]!=-1) return dp[i][j];
-        
-        if(s[i]==p[j] or p[j]=='?') return dp[i][j] = solve(i-1,j-1,s,p);
-        else if(p[j]=='*'){
-            return dp[i][j] = solve(i-1,j,s,p) or solve(i,j-1,s,p);
+        if(s[i]==t[j]) return dp[i][j] = solve(i-1,j-1,s,t);
+        else{
+            if(t[j]=='?'){
+                return dp[i][j] = solve(i-1,j-1,s,t);
+            }
+            if(t[j]=='*') return dp[i][j] = solve(i-1,j,s,t) or solve(i,j-1,s,t);
+            return dp[i][j] = 0;
         }
-        else return dp[i][j] = false;
     }
     
     bool isMatch(string s, string p) {
