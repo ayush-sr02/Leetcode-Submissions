@@ -1,22 +1,26 @@
 class Solution {
 public:
     int maxVowels(string s, int k) {
-        int n=s.size();
-        string vowel = "aeiou";
-        unordered_set<char> st(vowel.begin(),vowel.end());
-        int ans=0;
+        int mx=0;
+        string vowel="aeiou";
+        set<char> st(vowel.begin(),vowel.end());
         int i=0,j=0;
+        int n=s.size();
         int cnt=0;
-        while(i<n and j<n){
+        
+        while(j<n){
             if(st.count(s[j])) cnt++;
             if(j-i+1<k) j++;
             else if(j-i+1==k){
-                ans=max(ans,cnt);
-                if(st.count(s[i])) cnt--;
+                mx=max(mx,cnt);
+                if(st.count(s[i])){
+                    cnt--;
+                }
                 i++;
                 j++;
             }
         }
-        return ans;
+        
+        return mx;
     }
 };
