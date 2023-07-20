@@ -15,7 +15,7 @@ public:
         ListNode* cur=node;
         ListNode* prev=NULL;
         while(cur){
-            ListNode* next=cur->next;
+            ListNode* next = cur->next;
             cur->next=prev;
             prev=cur;
             cur=next;
@@ -31,14 +31,11 @@ public:
             fast=fast->next->next;
         }
         slow=reverse(slow);
-        cout<<slow->val;
-        
-        while(slow){
-            if(slow->val!=head->val) return false;
-            slow=slow->next;
+        while(head and slow){
+            if(head->val!=slow->val) return false;
             head=head->next;
+            slow=slow->next;
         }
-        
         return true;
     }
 };
