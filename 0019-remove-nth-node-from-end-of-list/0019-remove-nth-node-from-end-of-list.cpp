@@ -8,33 +8,20 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+//The idea is to use 2 pointers and create a gap of n between these two. After that move both pointers until one reaches the end. then then next of the slow pointer is the node which needs to be deleted
+
 class Solution {
 public:
-    ListNode* reverse(ListNode* node){
-        ListNode* cur=node;
-        ListNode* prev=NULL;
-        while(cur){
-            ListNode* next=cur->next;
-            cur->next=prev;
-            prev=cur;
-            cur=next;
-        }
-        return prev;
-    }
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        if(!head or !head->next) return NULL;
-        head=reverse(head);
-        ListNode* cur=head;
-        ListNode* prev=NULL;
-        while(cur and n>1){
-            prev=cur;
-            cur=cur->next;
-            n--;
+        ListNode* slow=head,*fast=head;
+        while(n--) fast=fast->next;
+        if(!fast) return head->next;
+        while(fast->next){
+            slow=slow->next;
+            fast=fast->next;
         }
-        if(cur->next){
-            cur->val=cur->next->val;
-            cur->next=cur->next->next;
-        }else prev->next=NULL;
-        return reverse(head);
+        slow->next=slow->next->next;
+        return head;
     }
 };
