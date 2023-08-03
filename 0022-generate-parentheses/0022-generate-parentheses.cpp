@@ -3,23 +3,17 @@ public:
     
     vector<string> ans;
     
-    void backtrack(int open, int close, int n, string s){
-        if(s.size()==n*2){
-            ans.push_back(s);
-            return;
+    void solve(int n,int open,int close,string cur){
+        if(cur.size()==n){
+            ans.push_back(cur);
         }
-        if(open<n){
-            backtrack(open+1,close,n,s+'(');
-        }
-        if(close<open) {
-            backtrack(open,close+1,n,s+')');
-        }
+        if(open<n/2) solve(n,open+1,close,cur+'(');
+        if(open>close) solve(n,open,close+1,cur+')');
+        
     }
     
     vector<string> generateParenthesis(int n) {
-        string s="";
-        int open=0,close=0;
-        backtrack(open, close, n, s);
+        solve(n*2,0,0,"");
         return ans;
     }
 };
