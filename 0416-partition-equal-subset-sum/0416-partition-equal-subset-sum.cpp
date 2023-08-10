@@ -1,22 +1,23 @@
 class Solution {
 public:
     
-    int solve(vector<int>&nums,vector<vector<int>>&dp,int sum,int i){
-        if(i<0) return 0;
-        if(i==0) return sum==nums[i];
-        if(dp[i][sum]!=-1) return dp[i][sum];
-        int notPick = solve(nums,dp,sum,i-1);
-        int pick=0;
-        if(sum>=nums[i]) pick = solve(nums,dp,sum-nums[i],i-1);
-        return dp[i][sum] = pick or notPick;
+    vector<vector<int>>dp;
+    
+    bool helper(int ind,int sum,vector<int>&nums,int target){
+        if(ind>=nums.size()) return sum==target;
+        if(dp[ind][sum]!=-1)return dp[ind][sum];
+        bool pick=false;
+        if(sum+nums[ind]<=target){
+            pick=helper(ind+1,sum+nums[ind],nums,target);
+        }
+        bool notpick=helper(ind+1,sum,nums,target);
+        return dp[ind][sum]=pick or notpick;
     }
     
     bool canPartition(vector<int>& nums) {
-        int sum=accumulate(begin(nums),end(nums),0);
-        if(sum%2!=0) return false;
-        sum/=2;
-        int n=nums.size();
-        vector<vector<int>> dp(n,vector<int> (sum+1,-1));
-        return solve(nums,dp,sum,n-1);
+        int x=accumulate(nums.begin(),nums.end(),0);
+        dp.resize(nums.size(),vector<int>(x/2+1,-1));
+        if(x&1) return false;
+        return helper(0,0,nums,x/2);
     }
 };
