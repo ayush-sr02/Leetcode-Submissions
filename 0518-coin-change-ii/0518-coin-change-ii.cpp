@@ -8,7 +8,7 @@ public:
         if(dp[i][target]!=-1) return dp[i][target];
         int notPick = solve(i+1,target,coins);
         int pick=0;
-        if(target>=coins[i]) pick = max(solve(i+1,target-coins[i],coins),solve(i,target-coins[i],coins));
+        if(target>=coins[i]) pick = solve(i,target-coins[i],coins);
         return dp[i][target] = pick+notPick;
     }
     
