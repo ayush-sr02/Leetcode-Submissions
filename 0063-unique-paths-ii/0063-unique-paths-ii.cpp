@@ -1,18 +1,18 @@
 class Solution {
 public:
-    
-    int solve(int i,int j,vector<vector<int>>&grid,vector<vector<int>>&dp){
-        if(i<0 or j<0 or grid[i][j]==1) return 0;
-        if(i==0 and j==0) return 1;
+    vector<vector<int>> dp;
+    int solve(int i,int j,vector<vector<int>>&grid){
+        if(i>=grid.size() or  j>=grid[0].size() or grid[i][j]==1) return 0;
+        if(i==grid.size()-1 and j==grid[0].size()-1) return 1;
         if(dp[i][j]!=-1) return dp[i][j];
-        int up = solve(i-1,j,grid,dp);
-        int left = solve(i,j-1,grid,dp);
-        return dp[i][j]=up+left;
+        int right = solve(i,j+1,grid);
+        int down = solve(i+1,j,grid);
+        return dp[i][j]=right+down;
     }
     
     int uniquePathsWithObstacles(vector<vector<int>>& grid) {
-        int n= grid.size(),m=grid[0].size();
-        vector<vector<int>> dp(n,vector<int> (m,-1));
-        return solve(n-1,m-1,grid,dp);
+        int n=grid.size(),m=grid[0].size();
+        dp.resize(n,vector<int> (m,-1));
+        return solve(0,0,grid);
     }
 };
