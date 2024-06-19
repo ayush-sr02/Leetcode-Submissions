@@ -1,12 +1,13 @@
 class Solution {
 public:
+    // #define ll long long
     int maxSubArray(vector<int>& nums) {
         int ans=INT_MIN;
-        int curSum=0;
+        int cur=0;
         for(int i=0;i<nums.size();i++){
-            curSum+=nums[i];
-            ans=max(ans,curSum);
-            if(curSum<0) curSum=0;
+            cur+=nums[i];
+            ans=max(ans,cur);
+            if(cur<0) cur=0;
         }
         return ans;
     }
