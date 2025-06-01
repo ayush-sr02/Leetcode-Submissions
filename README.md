@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0128-longest-consecutive-sequence) |
+| [0217-contains-duplicate](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## Hash Table
@@ -17,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0128-longest-consecutive-sequence) |
+| [0217-contains-duplicate](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## String
@@ -28,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
+| [0217-contains-duplicate](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## Divide and Conquer
