@@ -17,15 +17,18 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0128-longest-consecutive-sequence) |
+| [0242-valid-anagram](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## String
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
+| [0242-valid-anagram](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0242-valid-anagram) |
 ## Sorting
 |  |
 | ------- |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
+| [0242-valid-anagram](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
 ## Divide and Conquer
 |  |
