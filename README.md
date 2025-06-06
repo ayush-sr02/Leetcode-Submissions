@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
+| [0907-koko-eating-bananas](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0907-koko-eating-bananas) |
 ## Hash Table
 |  |
 | ------- |
@@ -89,4 +90,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0022-generate-parentheses) |
+## Binary Search
+|  |
+| ------- |
+| [0907-koko-eating-bananas](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0907-koko-eating-bananas) |
 <!---LeetCode Topics End-->
