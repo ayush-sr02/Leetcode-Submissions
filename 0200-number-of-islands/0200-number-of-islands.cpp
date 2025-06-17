@@ -1,39 +1,26 @@
 class Solution {
 public:
-    
-    bool isValid(int i,int j,int n,int m){
-        return i>=0 and j>=0 and i<n and j<m;
-    }
-    
-    void bfs(int i,int j,int n,int m,vector<vector<char>>& grid){
-        vector<pair<int,int>> movement = {{-1,0},{0,1},{1,0},{0,-1}};
-        queue<pair<int,int>> q;
-        q.push({i,j});
+
+    void solve(int i,int j,vector<vector<char>>&grid){
+        if(i<0 or j<0 or i>=grid.size() or j>=grid[0].size() or grid[i][j]=='0') return;
         grid[i][j]='0';
-        while(!q.empty()){
-            auto top = q.front();q.pop();
-            grid[top.first][top.second]=0;
-            for(auto i:movement){
-                int x=top.first+i.first,y=top.second+i.second;
-                if(isValid(x,y,n,m) and grid[x][y] == '1'){
-                    q.push(make_pair(x,y));
-                    grid[x][y]=0;
-                }
-            }
-        }
+        solve(i+1,j,grid);
+        solve(i-1,j,grid);
+        solve(i,j+1,grid);
+        solve(i,j-1,grid);
     }
-    
+
     int numIslands(vector<vector<char>>& grid) {
+        int count=0;
         int n=grid.size(),m=grid[0].size();
-        int ans=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
                 if(grid[i][j]=='1'){
-                    bfs(i,j,n,m,grid);
-                    ans++;
+                    solve(i,j,grid);
+                    count++;
                 }
             }
         }
-        return ans;
+        return count;
     }
 };
