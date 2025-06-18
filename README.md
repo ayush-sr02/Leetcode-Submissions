@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
 | [0907-koko-eating-bananas](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0907-koko-eating-bananas) |
+| [1036-rotting-oranges](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1036-rotting-oranges) |
 ## Hash Table
 |  |
 | ------- |
@@ -104,8 +105,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0200-number-of-islands) |
+| [1036-rotting-oranges](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1036-rotting-oranges) |
 ## Matrix
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0200-number-of-islands) |
+| [1036-rotting-oranges](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1036-rotting-oranges) |
 <!---LeetCode Topics End-->
