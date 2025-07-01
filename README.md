@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
+| [0747-min-cost-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0747-min-cost-climbing-stairs) |
 | [0907-koko-eating-bananas](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0907-koko-eating-bananas) |
 | [1036-rotting-oranges](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1036-rotting-oranges) |
 ## Hash Table
@@ -82,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0070-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0747-min-cost-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0747-min-cost-climbing-stairs) |
 ## Greedy
 |  |
 | ------- |
