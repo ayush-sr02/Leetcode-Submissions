@@ -79,6 +79,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0022-generate-parentheses) |
+| [0070-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 ## Greedy
@@ -120,4 +121,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0102-binary-tree-level-order-traversal) |
+## Math
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0070-climbing-stairs) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
