@@ -1,24 +1,23 @@
 class Solution {
-public: 
-    
-    int solve(vector<int>&coins,vector<vector<int>>&dp,int i,int target){
-        if(i==0){
-            if(target%coins[i]==0) return target/coins[i];
+public:
+    int solve(vector<int>&coins, int i,int n,int t, vector<vector<int>> &dp){
+        if(t==0) return 0;
+        if(i>=n){
+            if(t==0) return 0;
             return 1e9;
         }
-        if(dp[i][target]!=-1) return dp[i][target];
-        
-        int notPick = solve(coins,dp,i-1,target);
+        if(dp[i][t]!=-1) return dp[i][t];
+        int notPick = solve(coins, i+1, n, t, dp);
         int pick = 1e9;
-        if(target>=coins[i]) pick = 1+solve(coins,dp,i,target-coins[i]);
-        return dp[i][target] = min(pick,notPick);
+        if(coins[i]<=t) pick = 1 + solve(coins, i, n, t-coins[i], dp);
+        return dp[i][t] = min(pick, notPick);
     }
-    
-    int coinChange(vector<int>& coins, int amt) {
+
+    int coinChange(vector<int>& coins, int amount) {
         int n=coins.size();
-        sort(begin(coins),end(coins));
-        vector<vector<int>> dp(n,vector<int> (amt+1,-1));
-        int x=solve(coins,dp,n-1,amt);
-        return x==1e9?-1:x;
+        vector<vector<int>> dp(n,vector<int> (amount+1,-1));
+        sort(rbegin(coins), rend(coins));
+        int ans=solve(coins, 0, n, amount, dp);
+        return ans==1e9?-1:ans;
     }
 };
