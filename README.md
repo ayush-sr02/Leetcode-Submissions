@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0747-min-cost-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0747-min-cost-climbing-stairs) |
 | [0907-koko-eating-bananas](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0907-koko-eating-bananas) |
 | [1036-rotting-oranges](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1036-rotting-oranges) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Hash Table
 |  |
 | ------- |
@@ -31,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## String
 |  |
 | ------- |
@@ -139,4 +141,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0070-climbing-stairs) |
+## Design
+|  |
+| ------- |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1995-finding-pairs-with-a-certain-sum) |
 <!---LeetCode Topics End-->
