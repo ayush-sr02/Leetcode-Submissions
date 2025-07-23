@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0747-min-cost-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0747-min-cost-climbing-stairs) |
 | [0907-koko-eating-bananas](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0907-koko-eating-bananas) |
 | [1036-rotting-oranges](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1036-rotting-oranges) |
+| [1127-last-stone-weight](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1127-last-stone-weight) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Hash Table
 |  |
@@ -56,6 +57,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0347-top-k-frequent-elements) |
+| [1127-last-stone-weight](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1127-last-stone-weight) |
 ## Bucket Sort
 |  |
 | ------- |
