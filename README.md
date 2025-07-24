@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0001-two-sum) |
 | [0039-combination-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0039-combination-sum) |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
+| [0090-subsets-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0090-subsets-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0128-longest-consecutive-sequence) |
@@ -113,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0022-generate-parentheses](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0039-combination-sum) |
+| [0090-subsets-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0090-subsets-ii) |
 ## Binary Search
 |  |
 | ------- |
@@ -159,4 +161,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [1014-k-closest-points-to-origin](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/1014-k-closest-points-to-origin) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0090-subsets-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0090-subsets-ii) |
 <!---LeetCode Topics End-->
