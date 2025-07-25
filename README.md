@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0039-combination-sum) |
 | [0049-group-anagrams](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0049-group-anagrams) |
 | [0090-subsets-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0090-subsets-ii) |
+| [0118-pascals-triangle](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0128-longest-consecutive-sequence) |
@@ -95,6 +96,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0022-generate-parentheses](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0022-generate-parentheses) |
 | [0070-climbing-stairs](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0070-climbing-stairs) |
+| [0118-pascals-triangle](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0198-house-robber](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0198-house-robber) |
