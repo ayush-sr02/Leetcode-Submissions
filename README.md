@@ -167,4 +167,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0090-subsets-ii](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0090-subsets-ii) |
+## Linked List
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0206-reverse-linked-list) |
+## Recursion
+|  |
+| ------- |
+| [0206-reverse-linked-list](https://github.com/ayush-sr02/Leetcode-Submissions/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
